@@ -1,0 +1,204 @@
+=>SELECT DATA BY USING AND , OR AND NOT Operators
+
+AND OR NOT operators are used to filter data , records based
+
+AND poerator display a record TRUE
+OR poerator display a record TRUE
+NOT poerator display a record NOT TRUE
+
+WHERE clause can be combined with AND , OR ,NOT operators
+
+
+=>AND Syntax
+
+Method 1 AND Syntax
+SELECT * FROM tablename
+WHERE country="myanmar" AND city="yangon";
+
+
+Method 2 AND Syntax
+SELECT column1,column2,....
+FROM tablename
+WHERE country="myanmar" AND city="yangon";
+
+
+
+=>OR Syntax
+
+Method 1 OR Syntax
+SELECT * FROM tablename
+WHERE city="yangon" OR city="mandalay";
+
+
+Method 2 OR Syntax
+SELECT column1,column2,....
+FROM tablename
+WHERE city="yangon" OR city="mandalay";
+
+
+
+=>NOT Syntax
+
+Method 1 NOT Syntax
+SELECT * FROM tablename
+WHERE NOT country = "thailand";
+
+
+Method 2 NOT Syntax
+SELECT column1,column2,....
+FROM tablename
+WHERE NOT country = "thailand";
+
+
+__________________________________________________________
+
+=>EXERCISE
+
+CREATE TABLE employees(
+    employeeid INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT,
+    salary INT,
+    city VARCHAR(255) NOT NULL
+    );
+
+
+ INSERT INTO employees(name,age,salary,city)
+    VALUES('aung aung',25,500000,'mandalay'),
+    ('zaw zaw',35,300000,'yangon'),
+    ('tar gyi',20,150000,'yangon'),
+    ('mya mya',23,200000,'mandalay'),
+    ('hla hla',30,700000,'yangon'),
+    ('nu nu',21,280000,'bago'),
+    ('aye_chan',31,900000,'bago'),
+    ('naung naung',17,180000,'yangon'),
+    ('maung maung',20,90000,'mawlamyine'),
+    ('pwint pwint',28,490000,'bago'),
+    ('tar zaw',33,290000,'bago'),
+    ('aye aye aung',33,90000,'mawlamyine');
+
+SELECT * FROM employees;
+
+SELECT name,age,city FROM employees;
+
+SELECT id,name,salary
+FROM employees
+WHERE salary > 200000;
+
+SELECT id,name,salary
+FROM employees
+WHERE salary < 200000;
+
+SELECT id,name,salary
+FROM employees
+WHERE salary >= 200000;
+
+SELECT id,name,salary
+FROM employees
+WHERE salary <= 200000;
+
+SELECT id,name,salary
+FROM employees
+WHERE salary <> 200000;
+
+
+SELECT id,name,salary
+FROM employees
+WHERE salary = 200000;
+
+
+SELECT id,name,salary
+FROM employees
+WHERE salary LIKE 200000;
+
+SELECT * FROM employees
+WHERE salary LIKE 200000;
+
+
+SELECT id,name,age,salary
+FROM employees
+WHERE salary > 300000;
+
+SELECT id,name,age,salary
+FROM employees
+WHERE salary > 300000 AND age > 30;
+
+SELECT id,name,salary
+FROM employees
+WHERE salary > 300000 AND age >=20 AND city="yangon";
+
+SELECT * FROM employees
+WHERE salary > 300000 AND age >=20;
+
+
+__________________________________________________________
+
+
+=>OR EXE
+
+SELECT id,name,age,salary
+FROM employees
+WHERE salary > 300000 AND age > 20 AND city="yangon";
+
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE salary > 300000 OR age > 20 AND city="yangon";
+
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE salary > 300000 AND age > 20 OR city="yangon";
+
+__________________________________________________________
+
+=>NOT EXE
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE NOT city="mandalay";
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE NOT age < 25;
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE NOT age <= 25;
+
+__________________________________________________________
+
+=>AND NOT EXE
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE NOT city="mandalay";
+
+
+SELECT id,name,age,salary,city
+FROM employees
+WHERE NOT city="mandalay" AND NOT city="yangon";
+
+
+
+
+
+
+
+
+__________________________________________________________
+
+
+
+
+Comparison Operators
+=	equal
+>	greater than
+<	less than
+>=	greater than or equal
+<=	less than or equal
+
+
+LIKE Operator
+
+

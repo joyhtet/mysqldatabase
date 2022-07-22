@@ -1,0 +1,88 @@
+=>VERSION CHECK
+(Method 1 = in server)
+mysql -V
+(METHOD 2 = in mysql)
+help; (shortcut = \h)
+status; (shortcut = \s)
+
+
+
+-----------------------------
+
+
+=>Arithemetic Operator (5types)
+
+Operator               Meaning									Operates On
++ (Add)					Addition								Numeric Value
+- (Subtract)			Subtraction								Numeric Value
+* (Multiply)			Muliplication							Numeric Value
+/ (Divide)				division   								Numeric Value
+% (Modulus)				Returns remainder of a division			Numeric Value
+
+
+_________________________________________
+
+Addition Operator = Syntax
+
+SELECT 10 + 2;
+SELECT '10' + 2;
+SELECT '10' + '2';
+SELECT 10+2,20 + 30;
+SELECT '100' + '200','300' + '400';
+
+
+_________________________________________
+
+Subtraction Operator = Syntax
+
+SELECT 10 - 2;
+SELECT 20-10, 30 - 15;
+SELECT '1000' - '500','500' -'700';
+
+______________________________________________
+
+
+Multiplication Operator = Syntax
+
+SELECT 10 * 2;
+SELECT 5*3, 15 * 5;
+SELECT 20 * '3', '100' * 5;
+
+
+______________________________________________
+
+
+Division Operator and DIV = Syntax
+
+SELECT 10 / 2;
+SELEC 2/3 , 3 / 5;
+SELECT 100 / '25', '2000' /2 ,12 /0;
+
+SELECT 20 / 3;
+SELECT 20 DIV 3;
+SELECT 5 DIV 2, -40 DIV 3, -100 DIV -7;
+SELECT 5 DIV 2,20/5;
+SELECT 5 DIV 2,-20/5;
+
+
+______________________________________________
+
+
+
+
+Modulus Operator = Syntax
+
+SELECT 10 % 3;
+SELECT 2%3 , 3 % 5;
+SELECT 20 % '3', '100' % 5;
+
+SELECT 10 % 3;
+SELECT 10 MOD 3;
+SELECT '2345'%23;
+SELECT '2345' MOD 23;
+SELECT 70%5  , 10 % 3;
+SELECT 70 MOD 5, MOD(10,3);
+SELECT MOD(10,3);
+
+*error
+SELECT DIV(10,3);

@@ -1,0 +1,69 @@
+SERVER LOGIN
+
+Putty
+
+Host Name = dltmyanmar.com
+
+Host Name = 157.230.240.154
+
+Login as : dlt
+Password : datalandtechnology
+
+
+WINSCP
+
+Host Name = dltmyanmar.com
+uername = dlt
+password = datalandtechnology
+
+Host Name = 157.230.240.154
+username = dlt
+password = datalandtechnology
+
+
+______________________________________________________
+
+CMD
+username = ssh wdf6626@dltmyanmar.com
+password = datalandtechnology
+
+
+username = ssh dlt@dltmyanmar.com
+password = datalandtechnology
+
+
+username = ssh dlt@157.230.240.157
+password = datalandtechnology
+
+
+username = ssh dlt@137.184.248.101  /dlt@myanmar.net
+password = datalandtechnology
+
+
+
+______________________________________________________
+
+
+=>DATABASE LOGIN
+
+
+(Mthod 1)
+mysql -uWDF6626 -p
+datalandtechnology
+
+(Method 2)
+mysql -u WDF6626 -p
+datalandtechnology
+
+exit
+
+______________________________________________________
+
+
+
+
+
+
+3ERR
+
+
